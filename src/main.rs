@@ -27,6 +27,28 @@ fn main() {
     let d = 10.22;
     println!("This is value of d: {}", d);
 
+    //addition of numbers
+
+    let sum = 5 + 10;
+
+    println!("The sum is: {}", sum);
+
+    let difference = 20 - 10;
+
+    println!("The difference is: {}", difference);
+
+    let product = 20*30;
+
+    println!("The product is: {}", product);
+
+    let quotient = 92 /2;
+
+    println!("The quotient is: {}", quotient);
+
+    let remainder = 43 % 3;
+
+    println!("The remainder is: {}", remainder);
+
 
     println!("Hello, world!");
 }
