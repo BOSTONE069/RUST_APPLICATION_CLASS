@@ -57,6 +57,15 @@ fn main() {
     //charater datatypes
     let _r = 'z';
 
+    //Tupple datatypes
+
+    let tup :(i32, f64, u8) = (-400, 6.3, 1);
+
+    let (q,w, e) = tup;
+
+    println!("The value of q is: {}", q);
+    println!("the value of w is: {}", w);
+    println!("The value of e is: {}", e);
 
 
 
