@@ -22,6 +22,11 @@ fn main() {
 
     println!("The value of y is: {}", y);
 
+    //floating point datatypes
+
+    let d = 10.22;
+    println!("This is value of d: {}", d);
+
 
     println!("Hello, world!");
 }
