@@ -54,6 +54,10 @@ fn main() {
     let _t = true;
     let _f = false;
 
+    //charater datatypes
+    let _r = 'z';
+
+
 
 
     println!("Hello, world!");
