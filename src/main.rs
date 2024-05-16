@@ -16,6 +16,12 @@ fn main() {
         MAX_POINTS
     );
 
+    //shadowing
+    let y = 6;
+    let y = 7;
+
+    println!("The value of y is: {}", y);
+
 
     println!("Hello, world!");
 }
