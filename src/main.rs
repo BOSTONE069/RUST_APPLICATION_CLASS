@@ -17,10 +17,10 @@ fn main() {
     );
 
     //shadowing
-    let y = 6;
-    let y = 7;
+    let _y = 6;
+    let _y = 7;
 
-    println!("The value of y is: {}", y);
+    println!("The value of y is: {}", _y);
 
     //floating point datatypes
 
@@ -48,6 +48,12 @@ fn main() {
     let remainder = 43 % 3;
 
     println!("The remainder is: {}", remainder);
+
+    //Boolean
+
+    let _t = true;
+    let _f = false;
+
 
 
     println!("Hello, world!");
