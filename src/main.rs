@@ -1,4 +1,15 @@
+mod fruits;
+use fruits::print_fruits;
+
+mod countries;
+use countries::print_ccountries;
+
+mod cities;
+use cities::city::cities_world;
 fn main() {
+
+    cities_world();
+    print_ccountries();
     // Variables
     let x = 5;
 
@@ -70,4 +81,6 @@ fn main() {
 
 
     println!("Hello, world!");
+
+    print_fruits();
 }
