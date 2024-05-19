@@ -68,7 +68,7 @@ fn main() {
     //charater datatypes
     let _r = 'z';
 
-    //Tupple datatypes
+    //Tupple datatypes and how and how to distruvture them in usage
 
     let tup :(i32, f64, u8) = (-400, 6.3, 1);
 
