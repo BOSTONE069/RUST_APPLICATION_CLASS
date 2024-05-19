@@ -83,4 +83,20 @@ fn main() {
     println!("Hello, world!");
 
     print_fruits();
+
+    // array data types
+
+    let _a = [1, 2, 3, 4, 5];
+
+    let _months = ["January", "February", "March", "April", "May", "June", "July",
+    "August", "September", "October", "November", "December"];
+
+    println!(
+        "The value of months[0] is: {}",
+        _months[0]
+    );
+
+    println!("Tha valuse of _a[4] is: {}", _a[4]);
+
+
 }
