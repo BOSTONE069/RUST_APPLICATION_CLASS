@@ -107,8 +107,13 @@ fn main() {
         println!("{}", month);
     }
 
-
+    //calling  a function for getting age
     get_age(23);
+
+
+    //calling the function for adding two numbers
+   let sum = add_two_numbers(3, 5);
+   println!("The sum is {}", sum);
 
 
 }
@@ -116,4 +121,9 @@ fn main() {
 
 fn get_age(age: i32){
     println!("Your age is {}", age);
+}
+
+
+fn add_two_numbers(x: u64, y: u64)->u64{
+    return x + y;
 }
