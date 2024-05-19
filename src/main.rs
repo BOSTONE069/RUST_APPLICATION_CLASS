@@ -91,12 +91,29 @@ fn main() {
     let _months = ["January", "February", "March", "April", "May", "June", "July",
     "August", "September", "October", "November", "December"];
 
+
+    //accessing arrays using the index
     println!(
         "The value of months[0] is: {}",
         _months[0]
     );
 
+    //accessing the arrays using the index
     println!("Tha valuse of _a[4] is: {}", _a[4]);
 
 
+    //for loop to display the array
+    for month in _months.iter() {
+        println!("{}", month);
+    }
+
+
+    get_age(23);
+
+
+}
+
+
+fn get_age(age: i32){
+    println!("Your age is {}", age);
 }
