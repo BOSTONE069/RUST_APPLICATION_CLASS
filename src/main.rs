@@ -115,6 +115,8 @@ fn main() {
    let sum = add_two_numbers(3, 5);
    println!("The sum is {}", sum);
 
+   conditionals();
+
 
 }
 
@@ -127,3 +129,17 @@ fn get_age(age: i32){
 fn add_two_numbers(x: u64, y: u64)->u64{
     return x + y;
 }
+
+
+fn conditionals(){
+    let number =3;
+
+    if number == 5 {
+        println!("The number is 3")
+    } else {
+        println!("The number is not 5")
+    };
+}
+
+
+//function that takes input from user and output the inpus
