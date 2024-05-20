@@ -12,6 +12,15 @@ fn main() {
 
     cities_world();
     print_ccountries();
+
+    let number_1 = 101;
+
+    let mut number_to_string: String = number_1.to_string();
+
+    number_to_string.push_str("people in the room");
+
+    println!("Hey {}", number_to_string);
+
     // Variables
     let x = 5;
 
@@ -130,11 +139,25 @@ fn get_age(age: i32){
 }
 
 
+/// The function `add_two_numbers` in Rust takes two unsigned 64-bit integers as input and returns their
+/// sum.
+/// 
+/// Arguments:
+/// 
+/// * `x`: The parameter `x` is a 64-bit unsigned integer (u64) representing the first number to be
+/// added.
+/// * `y`: The parameter `y` in the `add_two_numbers` function represents the second number that will be
+/// added to the first number `x`.
+/// 
+/// Returns:
+/// 
+/// The function `add_two_numbers` returns the sum of the two input numbers `x` and `y`.
 fn add_two_numbers(x: u64, y: u64)->u64{
     return x + y;
 }
 
 
+/// The function `conditionals` checks if a number is equal to 5 and prints a corresponding message.
 fn conditionals(){
     let number =3;
 
