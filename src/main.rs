@@ -1,3 +1,5 @@
+use std::io;
+
 mod fruits;
 use fruits::print_fruits;
 
@@ -117,6 +119,8 @@ fn main() {
 
    conditionals();
 
+   input_output();
+
 
 }
 
@@ -142,4 +146,11 @@ fn conditionals(){
 }
 
 
-//function that takes input from user and output the inpus
+//function that takes input from user and output the input 
+
+fn input_output() {
+    let mut input = String::new();
+    println!("Please enter something: ");
+    io::stdin().read_line(&mut input).expect("Failed to read line");
+    println!("You entered: {}", input);
+}
