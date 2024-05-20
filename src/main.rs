@@ -15,8 +15,15 @@ fn main() {
 
     let number_1 = 101;
 
+    /// The line `let mut number_to_string: String = number_1.to_string();` is creating a mutable
+    /// variable `number_to_string` of type `String` and initializing it with the string representation
+    /// of the integer variable `number_1`.
     let mut number_to_string: String = number_1.to_string();
 
+   /// The line `number_to_string.push_str("people in the room");` is appending the string "people in
+   /// the room" to the existing string stored in the variable `number_to_string`. This operation
+   /// modifies the content of the `number_to_string` string by adding the specified text at the end of
+   /// it.
     number_to_string.push_str("people in the room");
 
     println!("Hey {}", number_to_string);
