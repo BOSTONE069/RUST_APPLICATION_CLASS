@@ -1,4 +1,4 @@
-use std::io;
+// use std::io;
 
 mod fruits;
 use fruits::print_fruits;
@@ -10,20 +10,20 @@ mod cities;
 use cities::city::cities_world;
 fn main() {
 
+    let input_1: &str = "23";
+
+    let input_number: i32 = input_1.parse().expect("Was expecting an integer number");
+
+
+    println!("{}", input_number);
+
     cities_world();
     print_ccountries();
 
     let number_1 = 101;
 
-    /// The line `let mut number_to_string: String = number_1.to_string();` is creating a mutable
-    /// variable `number_to_string` of type `String` and initializing it with the string representation
-    /// of the integer variable `number_1`.
     let mut number_to_string: String = number_1.to_string();
 
-   /// The line `number_to_string.push_str("people in the room");` is appending the string "people in
-   /// the room" to the existing string stored in the variable `number_to_string`. This operation
-   /// modifies the content of the `number_to_string` string by adding the specified text at the end of
-   /// it.
     number_to_string.push_str("people in the room");
 
     println!("Hey {}", number_to_string);
@@ -135,7 +135,7 @@ fn main() {
 
    conditionals();
 
-   input_output();
+//    input_output();
 
 
 }
@@ -178,9 +178,9 @@ fn conditionals(){
 
 //function that takes input from user and output the input 
 
-fn input_output() {
-    let mut input = String::new();
-    println!("Please enter something: ");
-    io::stdin().read_line(&mut input).expect("Failed to read line");
-    println!("You entered: {}", input);
-}
+// fn input_output() {
+//     let mut input = String::new();
+//     println!("Please enter something: ");
+//     io::stdin().read_line(&mut input).expect("Failed to read line");
+//     println!("You entered: {}", input);
+// }
