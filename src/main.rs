@@ -37,6 +37,11 @@ fn main() {
 
     change(&mut s);
 
+
+    let reference_to_nothing = dangle();
+
+    println!("{reference_to_nothing}");
+
 }
 
 fn calculate_length(s: &String) -> usize {
@@ -46,4 +51,11 @@ fn calculate_length(s: &String) -> usize {
 //mutable references
 fn change(some_string: &mut String){
     some_string.push_str(", world");
+}
+
+//dangling references
+fn dangle() -> String {
+    let s = String::from("Hello");
+
+    s
 }
