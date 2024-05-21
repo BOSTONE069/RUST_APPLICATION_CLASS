@@ -28,64 +28,6 @@ fn main() {
 
     println!("Hey {}", number_to_string);
 
-    // Variables
-    let x = 5;
-
-    println!("The value of x is: {}", x);
-
-    let x = 6;
-
-    println!("The value of x is: {}", x);
-
-    //Constant variables
-    const MAX_POINTS: u32 = 100_000;
-
-    println!(
-        "The value of MAX_POINTS is: {}",
-        MAX_POINTS
-    );
-
-    //shadowing
-    let _y = 6;
-    let _y = 7;
-
-    println!("The value of y is: {}", _y);
-
-    //floating point datatypes
-
-    let d = 10.22;
-    println!("This is value of d: {}", d);
-
-    //addition of numbers
-
-    let sum = 5 + 10;
-
-    println!("The sum is: {}", sum);
-
-    let difference = 20 - 10;
-
-    println!("The difference is: {}", difference);
-
-    let product = 20*30;
-
-    println!("The product is: {}", product);
-
-    let quotient = 92 /2;
-
-    println!("The quotient is: {}", quotient);
-
-    let remainder = 43 % 3;
-
-    println!("The remainder is: {}", remainder);
-
-    //Boolean
-
-    let _t = true;
-    let _f = false;
-
-    //charater datatypes
-    let _r = 'z';
-
     //Tupple datatypes and how and how to distruvture them in usage
 
     let tup :(i32, f64, u8) = (-400, 6.3, 1);
@@ -121,9 +63,9 @@ fn main() {
 
 
     //for loop to display the array
-    for month in _months.iter() {
-        println!("{}", month);
-    }
+    // for month in _months.iter() {
+    //     println!("{}", month);
+    // }
 
     //calling  a function for getting age
     get_age(23);
@@ -137,6 +79,17 @@ fn main() {
 
 //    input_output();
 
+    working_with_strings();
+
+    cloning_data();
+
+    let s = String::from("Hello");
+    let x = 5;
+
+    takes_ownership(s);
+
+    makes_copy(x);
+
 
 }
 
@@ -148,16 +101,16 @@ fn get_age(age: i32){
 
 /// The function `add_two_numbers` in Rust takes two unsigned 64-bit integers as input and returns their
 /// sum.
-/// 
+///
 /// Arguments:
-/// 
+///
 /// * `x`: The parameter `x` is a 64-bit unsigned integer (u64) representing the first number to be
 /// added.
 /// * `y`: The parameter `y` in the `add_two_numbers` function represents the second number that will be
 /// added to the first number `x`.
-/// 
+///
 /// Returns:
-/// 
+///
 /// The function `add_two_numbers` returns the sum of the two input numbers `x` and `y`.
 fn add_two_numbers(x: u64, y: u64)->u64{
     return x + y;
@@ -176,7 +129,7 @@ fn conditionals(){
 }
 
 
-//function that takes input from user and output the input 
+//function that takes input from user and output the input
 
 // fn input_output() {
 //     let mut input = String::new();
@@ -184,3 +137,29 @@ fn conditionals(){
 //     io::stdin().read_line(&mut input).expect("Failed to read line");
 //     println!("You entered: {}", input);
 // }
+
+// variables and data interaction with move
+fn working_with_strings(){
+    let s1 = String::from("hello");
+    let s2 = s1;
+
+    println!("{}. world", s2);
+}
+
+
+//cloning od data
+fn cloning_data(){
+    let s1 = String::from("Hello");
+    let s2 = s1.clone();
+
+    println!("s1 = {}, s2 = {}", s1, s2);
+}
+
+//ownership and functions
+fn takes_ownership(some_string: String){
+    println!("{}", some_string);
+}
+
+fn makes_copy(some_integer: i32){
+    println!("{}", some_integer);
+}
