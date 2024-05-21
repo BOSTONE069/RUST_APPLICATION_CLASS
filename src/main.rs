@@ -33,8 +33,17 @@ fn main() {
 
     println!("The length of {} is {}.", s1, len);
 
+    let mut s = String::from("Hello");
+
+    change(&mut s);
+
 }
 
 fn calculate_length(s: &String) -> usize {
     s.len()
+}
+
+//mutable references
+fn change(some_string: &mut String){
+    some_string.push_str(", world");
 }
