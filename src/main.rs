@@ -33,7 +33,7 @@ fn main() {
 
     println!("The length of {} is {}.", s1, len);
 
-    let mut s = String::from("Hello");
+    let mut s = String::from("Hello world");
 
     change(&mut s);
 
@@ -41,6 +41,12 @@ fn main() {
     let reference_to_nothing = dangle();
 
     println!("{reference_to_nothing}");
+
+    let word = first_word(&s);
+
+    println!("{}", word);
+
+    s.clear()
 
 }
 
@@ -58,4 +64,30 @@ fn dangle() -> String {
     let s = String::from("Hello");
 
     s
+}
+
+//Slices
+fn first_word(s: &String) -> usize {
+    let bytes = s.as_bytes();
+
+    for (i, &item) in bytes.iter().enumerate(){
+        if item == b' '{
+            return i;
+        }
+    }
+
+    s.len()
+}
+
+
+fn second_word(s: &String) -> &str {
+    let bytes = s.bytes();
+
+    for(i, &item) in bytes.iter().enumerate(){
+        if item == b' '{
+            return &s[0..i];
+        }
+    }
+
+    &s[..]
 }
