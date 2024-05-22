@@ -15,6 +15,11 @@ fn main() {
     let input_number: i32 = input_1.parse().expect("Was expecting an integer number");
     println!("{}", input_number);
 
+    // using as key word for casting in the program
+    let input_2 : i64 = input_number as i64;
+
+    println!("{}", input_2);
+
     cities_world();
     print_ccountries();
     print_fruits();
@@ -80,14 +85,14 @@ fn first_word(s: &String) -> usize {
 }
 
 
-fn second_word(s: &String) -> &str {
-    let bytes = s.bytes();
+// fn second_word(s: &String) -> &str {
+//     let bytes = s.bytes();
 
-    for(i, &item) in bytes.iter().enumerate(){
-        if item == b' '{
-            return &s[0..i];
-        }
-    }
+//     for(i, &item) in bytes.iter().enumerate(){
+//         if item == b' '{
+//             return &s[0..i];
+//         }
+//     }
 
-    &s[..]
-}
+//     &s[..]
+// }
