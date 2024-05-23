@@ -12,7 +12,12 @@ use cities::city::cities_world;
 mod enums;
 use enums::enumms;
 
+mod structs;
+use structs::structs_datatypes;
+
 fn main() {
+
+    structs_datatypes();
 
     enumms();
 
