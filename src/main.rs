@@ -18,7 +18,12 @@ use structs::structs_datatypes;
 mod ownership;
 use ownership::ownerships;
 
+mod borrowing;
+use borrowing::borrowing;
+
 fn main() {
+
+    borrowing();
 
     ownerships();
 
