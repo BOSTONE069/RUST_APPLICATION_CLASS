@@ -29,7 +29,7 @@ pub fn structs_datatypes(){
 
 
     // The code `let mut user1 = User { active: true, username: String::from("bostone1234"), email:
-    let mut user1 = User {
+    let user1 = User {
         active: true,
         username: String::from("bostone1234"),
         email: String::from("bostone@gmail.com"),
