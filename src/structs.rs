@@ -1,4 +1,9 @@
+use core::fmt;
+
+use fmt::Debug;
+
 pub fn structs_datatypes(){
+    #[derive(Debug)]
     struct User {
         active: bool,
         username: String,
@@ -32,4 +37,6 @@ pub fn structs_datatypes(){
         email: String::from("joy@gmail.com"),
         ..user1
     };
+
+    println!("{:?}", user2);
 }
