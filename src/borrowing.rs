@@ -21,6 +21,6 @@ pub fn borrowing(){
 /// The function `insert_to_db` is returning a mutable reference to the modified `String` after
 /// appending "World" to it.
 fn insert_to_db(par: & mut String) -> &String {
-    par.push_str("World");
+    par.push_str(" World");
     return par
 }
