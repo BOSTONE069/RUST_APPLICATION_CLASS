@@ -15,7 +15,12 @@ use enums::enumms;
 mod structs;
 use structs::structs_datatypes;
 
+mod ownership;
+use ownership::ownerships;
+
 fn main() {
+
+    ownerships();
 
     structs_datatypes();
 
