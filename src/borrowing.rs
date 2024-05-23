@@ -1,9 +1,9 @@
 /// The function `borrowing` creates a string `s1`, inserts it into a database, and then prints the
 /// value of `s2`.
 pub fn borrowing(){
-    let s1 = "hello".to_string();
+    let mut s1 = "hello".to_string();
 
-    let s2 = insert_to_db(&s1);
+    let s2 = insert_to_db(& mut s1);
 
     println!("The value of s2 is: {}", s2);  
 }
@@ -19,6 +19,7 @@ pub fn borrowing(){
 /// Returns:
 /// 
 /// The function `insert_to_db` is returning a reference to a `String` type.
-fn insert_to_db(par: &String) -> &String {
-    par
+fn insert_to_db(par: & mut String) -> &String {
+    par.push_str("World");
+    return par
 }
