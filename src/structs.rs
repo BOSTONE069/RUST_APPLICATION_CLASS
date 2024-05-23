@@ -2,14 +2,16 @@ use core::fmt;
 
 use fmt::Debug;
 
+#[derive(Debug)]
+struct User {
+    active: bool,
+    username: String,
+    email: String,
+    sign_in_count: u64,
+}
+
 pub fn structs_datatypes(){
-    #[derive(Debug)]
-    struct User {
-        active: bool,
-        username: String,
-        email: String,
-        sign_in_count: u64,
-    }
+
 
     let mut user1 = User {
         active: true,
