@@ -24,4 +24,7 @@ pub fn hash_maps(){
 }
 
 // create a structs with vectors and hashmaps
+fn making_entry_into_hashmaps(){
+    
+}
 //call function of the struct to update the vectors and hashmap
