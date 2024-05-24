@@ -25,8 +25,13 @@ use borrowing::borrowing;
 mod conditionalandloops;
 use conditionalandloops::conditions;
 
+mod collections;
+use collections::collections;
+
 fn main() {
-    
+
+    collections();
+
     conditions();
 
     borrowing();
