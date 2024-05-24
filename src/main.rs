@@ -28,7 +28,12 @@ use conditionalandloops::conditions;
 mod collections;
 use collections::collections;
 
+mod hashmaps;
+use hashmaps::hash_maps;
+
 fn main() {
+
+    hash_maps();
 
     collections();
 
