@@ -22,3 +22,6 @@ pub fn hash_maps(){
         println!("Key {} and Vlaue {}", key, value)
     }
 }
+
+// create a structs with vectors and hashmaps
+//call function of the struct to update the vectors and hashmap
