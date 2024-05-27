@@ -31,7 +31,12 @@ use collections::collections;
 mod hashmaps;
 use hashmaps::hash_maps;
 
+mod vectors;
+use vectors::vectors;
+
 fn main() {
+
+    vectors();
 
     hash_maps();
 
