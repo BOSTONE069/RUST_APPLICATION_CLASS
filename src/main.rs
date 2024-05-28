@@ -36,7 +36,12 @@ use vectors::vectors;
 
 mod structs_structure;
 use structs_structure::print_area;
+
+mod methods;
+use methods::methods;
 fn main() {
+
+    methods();
 
     print_area();
 
