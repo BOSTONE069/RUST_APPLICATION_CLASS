@@ -8,6 +8,10 @@ impl Rectangle{
     fn area(&self) -> u32{
         self.width * self.height
     }
+
+    fn width(&self) -> bool{
+        self.width > 0
+    }
 }
 
 pub fn methods(){
@@ -17,4 +21,8 @@ pub fn methods(){
     };
 
     println!("The area of the reactagmle is {} square pixels.", rect1.area());
+
+    if rect1.width(){
+        println!("The recatangle has nonzero width; is is {}", rect1.width);
+    }
 }
