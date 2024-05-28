@@ -34,7 +34,11 @@ use hashmaps::hash_maps;
 mod vectors;
 use vectors::vectors;
 
+mod structs_structure;
+use structs_structure::print_area;
 fn main() {
+
+    print_area();
 
     vectors();
 
