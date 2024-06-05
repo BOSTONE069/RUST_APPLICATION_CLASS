@@ -1,4 +1,4 @@
-enum Coin {
+pub enum Coin {
     Penny,
     Nickel,
     Dime,
@@ -17,5 +17,5 @@ pub fn value_in_cents(coin: Coin) -> u8 {
     println!("The value of the coin is: {}", value);
     value
 
-    
+
 }

@@ -42,6 +42,7 @@ use methods::methods;
 
 mod matchflow;
 use matchflow::value_in_cents;
+pub use matchflow::Coin;
 fn main() {
 
     methods();
