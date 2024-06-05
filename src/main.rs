@@ -39,6 +39,9 @@ use structs_structure::print_area;
 
 mod methods;
 use methods::methods;
+
+mod matchflow;
+use matchflow::value_in_cents;
 fn main() {
 
     methods();
@@ -102,7 +105,12 @@ fn main() {
 
     println!("{}", word);
 
-    s.clear()
+    s.clear();
+
+    let penny = Coin::Penny;
+
+
+    value_in_cents(penny);
 
 }
 
