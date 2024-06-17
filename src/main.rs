@@ -45,6 +45,7 @@ use matchflow::value_in_cents;
 pub use matchflow::Coin;
 fn main() {
 
+
     methods();
 
     print_area();
@@ -112,6 +113,19 @@ fn main() {
 
 
     value_in_cents(penny);
+
+    let five = Some(5);
+    let six = matchflow::plus_one(five);
+    let none = matchflow::plus_one(None);
+
+    println!("Five: {:?}", five);
+    println!("Six: {:?}", six);
+    println!("None: {:?}", none);
+
+    let coin = Coin::Quarter(matchflow::UsState::Alabama);
+    let value = value_in_cents(coin);
+    println!("Value of the coin: {}", value);
+
 
 }
 
