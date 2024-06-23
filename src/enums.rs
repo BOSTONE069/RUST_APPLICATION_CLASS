@@ -6,6 +6,8 @@ enum IpAddrKind{
     V6(String),
 }
 
+/// This `enum Message` is defining a Rust enum called `Message` that represents different types of
+/// messages. It has four variants:
 enum Message {
     Quit,
     Move {x: i32, y: i32},
@@ -13,6 +15,9 @@ enum Message {
     ChangeColor(i32, i32, i32),
 }
 
+/// This `impl Message` block is implementing a method called `process` for the `Message` enum. The
+/// `process` method takes a reference to `self` (an instance of `Message`) and then matches on the
+/// different variants of the `Message` enum.
 impl Message {
     fn process(&self) {
         match self {
@@ -44,7 +49,7 @@ pub fn enumms(){
     write_message.process();
     color_message.process();
 
-    
+
     const AGE: i32 = 13;
 
     enum STATUS {
