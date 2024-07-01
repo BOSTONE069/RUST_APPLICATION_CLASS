@@ -43,6 +43,9 @@ use methods::methods;
 mod matchflow;
 use matchflow::value_in_cents;
 pub use matchflow::Coin;
+
+mod matchflowpattersns;
+use matchflowpattersns::matchflowspatterns;
 fn main() {
 
 
@@ -65,6 +68,8 @@ fn main() {
     structs_datatypes();
 
     enumms();
+
+    matchflowspatterns();
 
     let input_1: &str = "23";
 

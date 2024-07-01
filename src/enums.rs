@@ -74,7 +74,7 @@ pub fn enumms(){
 
     println!("The status of this person is {}", user_status);
 
-    let home = IpAddrKind::V4(String::from("127.0.0.1"));
+    let _home = IpAddrKind::V4(String::from("127.0.0.1"));
 
-    let loopback = IpAddrKind::V6(String::from("::1"));
+    let _loopback = IpAddrKind::V6(String::from("::1"));
 }
