@@ -50,10 +50,15 @@ use matchflowpattersns::matchflowspatterns;
 mod macros;
 use macros::macros;
 
+mod traits;
+use traits::traits_person;
+
 fn main() {
 
+    traits_person();
+
     macros();
-    
+
     methods();
 
     print_area();
