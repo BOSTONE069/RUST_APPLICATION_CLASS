@@ -46,9 +46,14 @@ pub use matchflow::Coin;
 
 mod matchflowpattersns;
 use matchflowpattersns::matchflowspatterns;
+
+mod macros;
+use macros::macros;
+
 fn main() {
 
-
+    macros();
+    
     methods();
 
     print_area();
