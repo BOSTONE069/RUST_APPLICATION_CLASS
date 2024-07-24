@@ -53,7 +53,12 @@ use macros::macros;
 mod traits;
 use traits::traits_person;
 
+mod traits2;
+use traits2::social_traits;
+
 fn main() {
+
+    social_traits();
 
     traits_person();
 
