@@ -1,11 +1,21 @@
+pub mod helpers;
+
+
 fn main() {
     println!("Hello, world!");
 
-    test_func();
+    //test_func();
+
+    let results = helpers::namehelpers::get_full_name("world", "kenya");
+
+    println!("Hello from {0}", results);
 }
 
 
+
+#[allow(dead_code)]
 fn test_func(){
+
     let x: f64 = 255.0;
 
     let y: u8 = x as u8 - 5;
