@@ -24,5 +24,11 @@ fn test_func(){
 
     println!("{}", first_name);
 
-    
+    let data = ("bostone", "Ochieng", 1,2,4);
+
+    println!("{:?}", data);
+
+    let ages = [30,40,56,78,34,56];
+
+    println!("{:?}", ages);
 } 
