@@ -9,6 +9,10 @@ fn main() {
     let results = helpers::namehelpers::get_full_name("world", "kenya");
 
     println!("Hello from {0}", results);
+
+    let new_age = helpers::privatefns::get_age_plus(17);
+
+    println!("The new age is {0}", new_age);
 }
 
 
