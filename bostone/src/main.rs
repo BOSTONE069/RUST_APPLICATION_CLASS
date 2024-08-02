@@ -18,8 +18,14 @@ fn main() {
 
 }
 
+fn test_while(){
+    while true {
+        println!("Waiting....")
+    }
+}
+
 fn test_if(){
-    let age_to_drive: u8 = 16u8;
+    let age_to_drive: u8 = 17u8;
 
     println!("Enter the persons age to drive:");
     let myinput: &mut String = &mut String::from("");
@@ -28,9 +34,16 @@ fn test_if(){
     if age >= age_to_drive {
         println!("Issuing drivers license, because the person is old enough")
     }
+    else if age == 16 || age > 14{
+        println!("You are just on the verge of being old engough to tget the driver license")
+    }
     else {
         println!("Wait abit longer untill you attain the age of the person")
     }
+
+    let drivers_license = if age >= 16 {true} else {false};
+
+
 }
 
 
