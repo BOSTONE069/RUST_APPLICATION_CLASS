@@ -20,9 +20,27 @@ fn main() {
 
     test_loop();
 
+    test_forloop();
+
 }
 
+#[allow(dead_code)]
+fn test_forloop() {
+    let ages = [16, 14, 26, 12, 45];
 
+    let age_to_drive = 16i32;
+
+    for value in ages {
+        if value >= age_to_drive {
+            println!{"You are old enogh to drive"}
+        }
+        else {
+            println!("You need to wait for some time more....")
+        }
+    }
+}
+
+#[allow(dead_code)]
 fn test_loop() {
     let mut x = 1;
     loop{
@@ -34,6 +52,7 @@ fn test_loop() {
     }
 }
 
+#[allow(dead_code)]
 fn test_while(){
 
     let age_to_drive: u8 = 16u8; 
