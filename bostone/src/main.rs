@@ -1,5 +1,5 @@
 pub mod helpers;
-
+pub mod closures;
 
 fn main() {
     println!("Hello, world!");
@@ -22,8 +22,13 @@ fn main() {
 
     test_forloop();
 
+    closures::test_closures();
+
 }
 
+
+
+//Condtional and looping in rust
 #[allow(dead_code)]
 fn test_forloop() {
     let ages = [16, 14, 26, 12, 45];
