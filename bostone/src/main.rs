@@ -13,8 +13,22 @@ fn main() {
     let new_age = helpers::privatefns::get_age_plus(17);
 
     println!("The new age is {0}", new_age);
+
+    test_if();
+
 }
 
+fn test_if(){
+    let age_to_drive: u8 = 16u8;
+
+    println!("Enter the persons age to drive:");
+    let myinput: &mut String = &mut String::from("");
+    std::io::stdin().read_line(myinput).unwrap();
+    let age = myinput.replace("\n", "").parse::<u8>().unwrap();
+    if age >= age_to_drive {
+        println!("Issuing drivers license, because the person is old enough")
+    }
+}
 
 
 #[allow(dead_code)]
