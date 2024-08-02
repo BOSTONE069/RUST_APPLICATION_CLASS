@@ -56,7 +56,12 @@ use traits::traits_person;
 mod traits2;
 use traits2::social_traits;
 
+mod closures;
+use closures::test_closures;
+
 fn main() {
+
+    test_closures();
 
     social_traits();
 
