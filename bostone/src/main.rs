@@ -28,6 +28,9 @@ fn test_if(){
     if age >= age_to_drive {
         println!("Issuing drivers license, because the person is old enough")
     }
+    else {
+        println!("Wait abit longer untill you attain the age of the person")
+    }
 }
 
 
