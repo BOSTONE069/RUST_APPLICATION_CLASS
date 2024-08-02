@@ -14,16 +14,44 @@ fn main() {
 
     println!("The new age is {0}", new_age);
 
-    test_if();
+    //test_if();
+
+    test_while();
+
+    test_loop();
 
 }
 
-fn test_while(){
-    while true {
-        println!("Waiting....")
+
+fn test_loop() {
+    let mut x = 1;
+    loop{
+        println!("Hello, world!");
+        if x > 5 {
+            break;
+        }
+        x = x + 1;
     }
 }
 
+fn test_while(){
+
+    let age_to_drive: u8 = 16u8; 
+
+    let mut current_age: u8 = 0u8;
+
+
+    while current_age < age_to_drive {
+        println!("Waiting....");
+        current_age += 1;
+
+        if current_age == 4 {
+            break;
+        }
+    }
+}
+
+#[allow(dead_code)]
 fn test_if(){
     let age_to_drive: u8 = 17u8;
 
@@ -41,7 +69,7 @@ fn test_if(){
         println!("Wait abit longer untill you attain the age of the person")
     }
 
-    let drivers_license = if age >= 16 {true} else {false};
+    let _drivers_license = if age >= 16 {true} else {false};
 
 
 }
