@@ -9,7 +9,8 @@ pub fn matchflowspatterns(){
         Japanese,
     }
 
-    let language = Language::English;
+    let language = Language::Russian;
+
 
     match language {
         Language::English => println!("Hello World"),
@@ -20,3 +21,4 @@ pub fn matchflowspatterns(){
 
 
 }
+
