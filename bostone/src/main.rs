@@ -26,6 +26,8 @@ fn main() {
     closures::test_closures();
 
     matches::test_match_int();
+    matches::test_match_string();
+    matches::test_arrays();
 
 }
 
