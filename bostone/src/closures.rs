@@ -26,6 +26,6 @@ pub fn test_closures() {
     change_name("Rhemney");
 
     println!("{}", p1.first_name);
-
+    println!("{}", p1.last_name);
 
 }

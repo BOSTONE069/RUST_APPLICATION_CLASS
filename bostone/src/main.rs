@@ -1,5 +1,6 @@
 pub mod helpers;
 pub mod closures;
+pub mod matches;
 
 fn main() {
     println!("Hello, world!");
@@ -16,13 +17,15 @@ fn main() {
 
     //test_if();
 
-    test_while();
+    // test_while();
 
-    test_loop();
+    // test_loop();
 
-    test_forloop();
+    // test_forloop();
 
     closures::test_closures();
+
+    matches::test_match_int();
 
 }
 
