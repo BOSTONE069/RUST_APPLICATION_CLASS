@@ -1,7 +1,7 @@
 pub mod helpers;
 pub mod closures;
 pub mod matches;
-
+pub mod enums;
 fn main() {
     println!("Hello, world!");
 
@@ -23,12 +23,21 @@ fn main() {
 
     // test_forloop();
 
-    closures::test_closures();
+    // closures::test_closures();
 
-    matches::test_match_int();
-    matches::test_match_string();
-    matches::test_arrays();
+    // matches::test_match_int();
+    // matches::test_match_string();
+    // matches::test_arrays();
 
+    let result = enums::enumerations();
+    println!("{0}", result.unwrap());
+
+
+    let strresult = enums::test_option_string();
+    println!("My name is {}", strresult.unwrap());
+
+    let charresult = enums::test_option_chartype();
+    println!("Character type selected is: {}", charresult.unwrap().to_string());
 }
 
 
