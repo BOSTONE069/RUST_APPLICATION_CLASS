@@ -44,6 +44,8 @@ fn main() {
 
     structs::get_vehicle();
 
+    structs::create_vehicle();
+
    
 
 }

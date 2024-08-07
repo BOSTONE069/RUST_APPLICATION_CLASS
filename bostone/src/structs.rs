@@ -6,7 +6,7 @@ enum  VehicleColor {
     Silver
 }
 
-
+#[derive(Debug)]
 struct Vehicle  {
     manufacturer: String,
     model: String,
@@ -35,6 +35,11 @@ fn new_vehicle() -> Vehicle {
 pub fn get_vehicle() {
     let myvehicle: Vehicle = new_vehicle();
     println!("Vehicle manufacturer: {}, model: {}, year: {}, color: {:?}", myvehicle.manufacturer, myvehicle.model, myvehicle.year, myvehicle.color);
+}
+
+pub fn create_vehicle() {
+    let my_vehicle = new_vehicle();
+    println!("{:?}", my_vehicle);
 }
 
 
