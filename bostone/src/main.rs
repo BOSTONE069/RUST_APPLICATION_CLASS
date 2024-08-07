@@ -42,6 +42,8 @@ fn main() {
 
     structs::test_create_person();
 
+    structs::get_vehicle();
+
    
 
 }
