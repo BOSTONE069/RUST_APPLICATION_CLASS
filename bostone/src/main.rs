@@ -2,6 +2,7 @@ pub mod helpers;
 pub mod closures;
 pub mod matches;
 pub mod enums;
+pub mod structs;
 fn main() {
     println!("Hello, world!");
 
@@ -38,6 +39,11 @@ fn main() {
 
     let charresult = enums::test_option_chartype();
     println!("Character type selected is: {}", charresult.unwrap().to_string());
+
+    structs::test_create_person();
+
+   
+
 }
 
 
