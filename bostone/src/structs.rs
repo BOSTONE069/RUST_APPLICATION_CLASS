@@ -21,6 +21,17 @@ struct Person {
     birth_month: u8,
 }
 
+#[derive(Debug)]
+struct VehicleTuple(String, String, u16);
+
+pub fn create_vehicle_tuple() {
+    let myvehicle_tuple = new_vehicletuple();
+    println!("{:?}", myvehicle_tuple);
+}
+fn new_vehicletuple() -> VehicleTuple {
+    return VehicleTuple("RangeRover".to_string(), "Landrover".to_string(), 2024);
+}
+
 
 fn new_vehicle() -> Vehicle {
     let vehicle = Vehicle {
