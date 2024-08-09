@@ -1,17 +1,17 @@
 
-
+#[allow(dead_code)]
 pub fn enumerations() -> Option<u8> {
      let mut opt1: Option<u8> = None;
      opt1 = Some(10);
      return opt1;
 }
-
+#[allow(dead_code)]
 pub fn test_option_string() -> Option<String> {
     let mut opt1: Option<String> = None;
     opt1 = Some("Bostone Ochieng".to_string());
     return opt1;
 }
-
+#[allow(dead_code)]
 pub fn test_option_chartype() -> Option<CharacterType> {
     let mut chartype: Option<CharacterType> = None;
     chartype = Some(CharacterType::Mage);
