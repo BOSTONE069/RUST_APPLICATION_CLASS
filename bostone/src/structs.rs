@@ -4,7 +4,8 @@ enum  VehicleColor {
     Red,
     White,
     Black,
-    Silver
+    Silver,
+    Blue
 }
 
 #[derive(Debug)]
@@ -15,11 +16,42 @@ struct Vehicle  {
     color: VehicleColor,
 }
 
+
+impl Vehicle {
+    //instance methods
+    fn paint(&mut self, new_color: VehicleColor) {
+        self.color = new_color;
+    }
+
+    pub fn set_year(&mut self, year: u16) {
+        self.year = year;
+    }
+
+    //static methods
+    fn create_vehicle() -> Vehicle {
+        let new_vehicle = Vehicle{
+            manufacturer: "default".to_string(),
+            model: "default".to_string(),
+            year: 1990,
+            color: VehicleColor::Blue,
+        };
+        return new_vehicle;
+    }
+}
+
+
 struct Person {
     first_name: String,
     last_name: String,
     birth_year: u32,
     birth_month: u8,
+    miles_walked: u32,
+}
+
+impl Person {
+    fn walk(&mut self, walking: u32) {
+        self.miles_walked += walking;
+    }
 }
 
 #[derive(Debug)]
@@ -35,12 +67,13 @@ fn new_vehicletuple() -> VehicleTuple {
 
 
 fn new_vehicle() -> Vehicle {
-    let vehicle = Vehicle {
+    let mut vehicle = Vehicle {
         manufacturer: "Vocswagen".to_string(),
         model: "Porche".to_string(),
         year: 2024,
         color: VehicleColor::Black,
     };
+    vehicle.paint(VehicleColor::White);
     return vehicle;
 }
 
@@ -50,7 +83,10 @@ pub fn get_vehicle() {
 }
 
 pub fn create_vehicle() {
-    let my_vehicle = new_vehicle();
+    //let my_vehicle = new_vehicle();
+    let mut my_vehicle = Vehicle::create_vehicle();
+    my_vehicle.set_year(2016);
+    my_vehicle.paint(VehicleColor::Silver);
     println!("{:?}", my_vehicle);
 }
 
@@ -61,11 +97,14 @@ fn new_person() -> Person {
         last_name: "Doe".to_string(),
         birth_month: 6,
         birth_year: 1986,
+        miles_walked: 0,
     };
     return p1;
 }
 
 pub fn test_create_person() {
-    let myperson: Person = new_person();
-    println!("First name: {}, Last name: {}, birth month: {}, birth year: {}", myperson.first_name, myperson.last_name, myperson.birth_month, myperson.birth_year);
+    let mut myperson: Person = new_person();
+    myperson.walk(1000);
+    myperson.walk(1000);
+    println!("First name: {}, Last name: {}, birth month: {}, birth year: {}, miles walked: {}", myperson.first_name, myperson.last_name, myperson.birth_month, myperson.birth_year, myperson.miles_walked);
 }

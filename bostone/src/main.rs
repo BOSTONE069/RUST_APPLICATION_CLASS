@@ -42,11 +42,11 @@ fn main() {
 
     structs::test_create_person();
 
-    structs::get_vehicle();
+    // structs::get_vehicle();
 
-    structs::create_vehicle();
+    // structs::create_vehicle();
 
-    structs::create_vehicle_tuple();
+    // structs::create_vehicle_tuple();
 
    
 
