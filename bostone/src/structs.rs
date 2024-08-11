@@ -8,6 +8,20 @@ enum  VehicleColor {
     Blue
 }
 
+// The `Vehicle` struct represents a vehicle with manufacturer, model, year, and color fields.
+// 
+// Properties:
+// 
+// * `manufacturer`: manufacturer: the company that produces the vehicle
+// * `model`: The `model` property in the `Vehicle` struct represents the model of the vehicle, such as
+// "Civic" for a Honda Civic or "F-150" for a Ford F-150. It is a String type field that holds the
+// specific model name of the vehicle.
+// * `year`: The `year` property in the `Vehicle` struct represents the year in which the vehicle was
+// manufactured. It is of type `u16`, which means it can store unsigned 16-bit integer values ranging
+// from 0 to 65,535.
+// * `color`: It looks like the `color` field in the `Vehicle` struct is of type `VehicleColor`. Could
+// you please provide more information about the `VehicleColor` enum or struct so that I can help you
+// further with the definition of the `color` field?
 #[derive(Debug)]
 struct Vehicle  {
     manufacturer: String,
