@@ -44,7 +44,7 @@ fn main() {
 
     // structs::get_vehicle();
 
-    // structs::create_vehicle();
+    structs::create_vehicle();
 
     // structs::create_vehicle_tuple();
 

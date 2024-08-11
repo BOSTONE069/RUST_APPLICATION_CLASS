@@ -41,6 +41,10 @@ impl Vehicle {
         self.year = year;
     }
 
+    pub fn set_model(&mut self, model: String) {
+        self.model = model;
+    }
+
     //static methods
     fn create_vehicle() -> Vehicle {
         let new_vehicle = Vehicle{
@@ -101,6 +105,7 @@ pub fn create_vehicle() {
     let mut my_vehicle = Vehicle::create_vehicle();
     my_vehicle.set_year(2016);
     my_vehicle.paint(VehicleColor::Silver);
+    my_vehicle.set_model("Honda".to_string());
     println!("{:?}", my_vehicle);
 }
 
