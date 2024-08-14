@@ -55,6 +55,7 @@ fn main() {
 
     myvec::test_vec_int();
     myvec::test_vec_string();
+    myvec::test_vec_car();
 }
 
 

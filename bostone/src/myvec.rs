@@ -27,7 +27,29 @@ pub fn test_vec_int() {
 pub fn test_vec_string() {
     let first_name: Vec<&str> = vec!["Bostone", "Rhemney", "Velma", "James", "Milton"];
 
-    for first_name in first_name {
+    for first_name in first_name.clone() {
         println!("{}", first_name);
     }
+
+    println!("{:?}", first_name);
+}
+
+#[derive(Debug)]
+#[derive(Clone)]
+struct Car {
+    manufacturer: String,
+    model: String,
+    year: u32,
+}
+
+pub fn test_vec_car() {
+    let mut car_list: Vec<Car> = vec![];
+
+    for _ in 1..100u8 {
+        car_list.push(Car{manufacturer:"Porsche".to_string(), model:"Panamera".to_string(), year: 2024});
+    }
+
+    println!("{:?}", car_list);
+    println!("{:?}", car_list.len());
+    println!("{:?}", car_list.capacity());
 }
