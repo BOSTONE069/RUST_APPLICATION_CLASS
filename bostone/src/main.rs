@@ -4,6 +4,8 @@ pub mod matches;
 pub mod enums;
 pub mod structs;
 pub mod test_traits;
+pub mod myvec;
+
 fn main() {
     println!("Hello, world!");
 
@@ -49,9 +51,10 @@ fn main() {
 
     // structs::create_vehicle_tuple();
 
-    test_traits::create_person();
-   
+    // test_traits::create_person();
 
+    myvec::test_vec_int();
+    myvec::test_vec_string();
 }
 
 
