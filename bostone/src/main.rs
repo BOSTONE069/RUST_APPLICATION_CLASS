@@ -5,6 +5,7 @@ pub mod enums;
 pub mod structs;
 pub mod test_traits;
 pub mod myvec;
+pub mod hashmaps;
 
 fn main() {
     println!("Hello, world!");
@@ -53,9 +54,11 @@ fn main() {
 
     // test_traits::create_person();
 
-    myvec::test_vec_int();
-    myvec::test_vec_string();
-    myvec::test_vec_car();
+    // myvec::test_vec_int();
+    // myvec::test_vec_string();
+    // myvec::test_vec_car();
+
+    hashmaps::test_hashmap_basic();
 }
 
 
