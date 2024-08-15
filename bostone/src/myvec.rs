@@ -60,8 +60,13 @@ pub fn test_vec_car() {
 
     car_list.insert(0, Car{manufacturer:"RangeRover".to_string(), model:"Landorover".to_string(), year:2020});
 
-
     car_list.remove(0);
+
+    let keep = |e: &Car| {if e.manufacturer=="BMW" {return true;} else {return false;}};
+
+    car_list.retain(keep);
+
+    car_list.reserve(100);
 
     println!("{:?}", car_list);
     println!("{:?}", car_list.len());
