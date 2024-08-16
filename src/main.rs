@@ -1,5 +1,5 @@
 //use std::io;
-
+pub mod myiters;
 mod fruits;
 use fruits::print_fruits;
 
@@ -150,6 +150,8 @@ fn main() {
     let coin = Coin::Quarter(matchflow::UsState::Alabama);
     let value = value_in_cents(coin);
     println!("Value of the coin: {}", value);
+
+    myiters::test_rust_iterator();
 
 
 }
