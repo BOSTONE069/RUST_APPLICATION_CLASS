@@ -7,7 +7,7 @@ pub mod test_traits;
 pub mod myvec;
 pub mod hashmaps;
 pub mod hashsets;
-
+pub mod myiters;
 fn main() {
     println!("Hello, world!");
 
@@ -61,7 +61,9 @@ fn main() {
 
     // hashmaps::test_hashmap_basic();
 
-    hashsets::test_hashset_type();
+    // hashsets::test_hashset_type();
+
+    myiters::test_rust_iterator();
 }
 
 
