@@ -8,6 +8,7 @@ pub mod myvec;
 pub mod hashmaps;
 pub mod hashsets;
 pub mod myiters;
+pub mod mydatetime;
 fn main() {
     println!("Hello, world!");
 
@@ -63,7 +64,9 @@ fn main() {
 
     // hashsets::test_hashset_type();
 
-    myiters::test_rust_iterator();
+    //myiters::test_rust_iterator();
+
+    mydatetime::test_std_time();
 }
 
 
