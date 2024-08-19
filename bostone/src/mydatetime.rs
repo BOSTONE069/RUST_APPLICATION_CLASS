@@ -1,6 +1,8 @@
 use std::{time::{Duration, Instant}, ops::Sub};
 use std::thread::sleep;
 
+extern crate chrono;
+
 pub fn test_std_time() {
     let dur1 = Duration::from_secs(15);
 
