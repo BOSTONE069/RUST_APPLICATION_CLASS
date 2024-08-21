@@ -29,5 +29,4 @@ pub fn test_chrono(){
     let local_time = chrono::Local::now();
     println!("{}", local_time.format("%Y-%b-%d %H:%M:%S"));
 
-
 }
