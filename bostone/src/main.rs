@@ -9,6 +9,8 @@ pub mod hashmaps;
 pub mod hashsets;
 pub mod myiters;
 pub mod mydatetime;
+pub mod mythreads;
+
 fn main() {
     println!("Hello, world!");
 
@@ -66,9 +68,13 @@ fn main() {
 
     //myiters::test_rust_iterator();
 
-    mydatetime::test_std_time();
+    // mydatetime::test_std_time();
 
-    mydatetime::test_chrono();
+    // mydatetime::test_chrono();
+
+    mythreads::test_threads();
+
+    mythreads::spawn_thread();
 }
 
 
