@@ -4,6 +4,9 @@ struct Person {
 
 }
 
+/// The function `test_thread_variables` defines a closure that captures variables `age` and `person01`,
+/// spawns a thread to execute the closure, and then prints the values of `age` and `person01` outside
+/// the thread scope.
 pub fn test_thread_variables() {
     let age = 34;
 
