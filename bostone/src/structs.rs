@@ -75,6 +75,7 @@ impl Person {
 #[derive(Debug)]
 struct VehicleTuple(String, String, u16);
 
+/// The function `create_vehicle_tuple` in Rust creates a new vehicle tuple and prints it.
 pub fn create_vehicle_tuple() {
     let myvehicle_tuple = new_vehicletuple();
     println!("{:?}", myvehicle_tuple);

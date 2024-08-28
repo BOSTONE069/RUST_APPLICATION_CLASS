@@ -7,6 +7,8 @@ pub fn test_threads() {
     }
 }
 
+/// The function `spawn_thread` creates two threads that perform a calculation and checks if both
+/// threads have finished before exiting.
 pub fn spawn_thread() {
     let thread_fn = || {
         let mut x = 0u128;
