@@ -11,6 +11,7 @@ pub mod myiters;
 pub mod mydatetime;
 pub mod mythreads;
 pub mod myscopedthreads;
+pub mod mymutex;
 
 fn main() {
     println!("Hello, world!");
@@ -78,6 +79,7 @@ fn main() {
     // mythreads::spawn_thread();
 
     myscopedthreads::test_thread_variables();
+    mymutex::test_mutex();
 }
 
 
