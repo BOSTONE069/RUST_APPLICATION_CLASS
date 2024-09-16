@@ -6,6 +6,13 @@ pub fn enumerations() -> Option<u8> {
      return opt1;
 }
 #[allow(dead_code)]
+/// The function `test_option_string` returns an `Option<String>` containing the string "Bostone
+/// Ochieng".
+/// 
+/// Returns:
+/// 
+/// The function `test_option_string` is returning an `Option<String>` with the value `Some("Bostone
+/// Ochieng".to_string())`.
 pub fn test_option_string() -> Option<String> {
     let mut opt1: Option<String> = None;
     opt1 = Some("Bostone Ochieng".to_string());

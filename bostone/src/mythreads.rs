@@ -1,5 +1,6 @@
 use std::thread::spawn;
 
+/// The function `test_threads` in Rust calculates the sum of numbers from 1 to 499.
 pub fn test_threads() {
     let mut x = 0u128;
     for i in 1..500 {
